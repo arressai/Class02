@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Random color example — event handler attribute</title>
-    <style>
-      button {
-        margin: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <button>Change color</button>
-    <script>
-      const btn = document.querySelector('button');
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<title>Bill Nye's Affirmation Generator</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<!-- CONTENT GOES HERE -->
+<!-- Title of page -->
+<h1>Bill Nye's Affirmation Generator</h1>
 
-      function random(number) {
-        return Math.floor(Math.random() * (number+1));
-      }
-
-      btn.addEventListener('click', () => {
-        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-        document.body.style.backgroundColor = rndCol;
-      });
-    </script>
-  </body>
+<!-- <button id="the-button">Click for New Name</button> -->
+    <button class="favorite styled" id="the-button" type="button">PLOT TWIST</button>
+ <!-- Do I actually need this? I loaded .wav into my folders and it plays fine without html injection but was suggested through my google search -->
+    <!-- <audio id="audioPlayer" src="BillNye_RSI.wav"></audio> -->
+</section>
+<div class="cohort-name" id="random-name">...here we go</div>
+		<!-- Link to JS libraries and external files -->
+  
+		<script type="text/javascript" src="script.js"></script>
+	</body>
 </html>
